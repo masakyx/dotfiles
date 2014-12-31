@@ -1,3 +1,4 @@
+"設定
 set nocompatible
 
 " 画面表示の設定
