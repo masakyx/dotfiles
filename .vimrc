@@ -87,3 +87,4 @@ set wrap
 set virtualedit=all
 
 set clipboard=unnamedplus
+colorscheme ron
