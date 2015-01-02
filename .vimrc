@@ -112,11 +112,13 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'taichouchou2/html5.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'drillbits/nyan-modoki.vim'
+NeoBundle 'jiangmiao/simple-javascript-indenter'
 " コメントON/OFFを手軽に実行
 NeoBundle 'tomtom/tcomment_vim'
 " インデントに色を付けて見やすくする
 NeoBundle 'nathanaelkane/vim-indent-guides'
-"NeoBundle 'taichouchou2/vim-javascript'
+NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'marijnh/tern_for_vim'
 
 
 call neobundle#end()
@@ -153,4 +155,7 @@ let g:nyan_modoki_select_cat_face_number = 2
 let g:nayn_modoki_animation_enabled= 1
 
 " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 1    
+
+" このようにするとjshintを必ず使ってチェックしてくれるようになる
+let g:syntastic_javascript_checker = "jshint""
