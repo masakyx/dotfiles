@@ -121,7 +121,7 @@ NeoBundle 'tomtom/tcomment_vim'
 " インデントに色を付けて見やすくする
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'marijnh/tern_for_vim'
+"NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'taichouchou2/html5.vim'
 NeoBundle 'Align'
 NeoBundle 'pangloss/vim-javascript'
