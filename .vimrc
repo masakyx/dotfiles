@@ -171,4 +171,5 @@ let g:syntastic_javascript_checker = "jshint""
 if has("autocmd")
   autocmd BufNewFile,BufRead *.ejs set filetype=javascript
 endif
+au BufNewFile,BufRead *.ejs set filetype=html
 
