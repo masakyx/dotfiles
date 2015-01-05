@@ -4,6 +4,9 @@ set nocompatible
 " 画面表示の設定
 syntax on
 
+colorscheme ron
+
+
 set number         " 行番号を表示する
 set cursorline     " カーソル行の背景色を変える
 set cursorcolumn   " カーソル位置のカラムの背景色を変える
@@ -87,7 +90,7 @@ set wrap
 set virtualedit=all
 
 set clipboard=unnamedplus
-colorscheme ron
+""colorscheme ron
 
 
 "---------------------------
@@ -119,6 +122,10 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'marijnh/tern_for_vim'
+NeoBundle 'taichouchou2/html5.vim'
+NeoBundle 'Align'
+NeoBundle 'pangloss/vim-javascript'
+
 
 
 call neobundle#end()
@@ -159,3 +166,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 " このようにするとjshintを必ず使ってチェックしてくれるようになる
 let g:syntastic_javascript_checker = "jshint""
+
+
+if has("autocmd")
+  autocmd BufNewFile,BufRead *.ejs set filetype=javascript
+endif
+
