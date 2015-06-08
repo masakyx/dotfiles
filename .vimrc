@@ -87,7 +87,7 @@ set infercase
 set wrap
 
 " 文字がない場所にもカーソルを移動できるようにする
-set virtualedit=all
+"set virtualedit=all
 
 set clipboard=unnamedplus
 ""colorscheme ron
